@@ -13,12 +13,14 @@ public class Main {
 
         KnapsackProblem newProblem= new KnapsackProblem(11,list);
 
-
-        newProblem.solveProblem();
+        System.out.println("These items should be included in the knapsack:");
+        System.out.println(newProblem.solveProblem());
         newProblem.visualizeSolution();
 
         ConstrainedLongestCommonSubsequence problemSolver = new ConstrainedLongestCommonSubsequence("ATCACA","ACTCAA","CC");
+        System.out.println("Longest Constrained Common Subsequence is:");
         System.out.println(problemSolver.solveCLCS());
+        System.out.println("Longest Common Subsequence is:");
         System.out.println(problemSolver.solveLCS());
 
     }

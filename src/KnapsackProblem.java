@@ -28,6 +28,7 @@ public class KnapsackProblem {
 
     }
 
+
     public LinkedList<KnapsackItem> solveProblem(){
         int i = itemList.length;
         int j = capacity;
@@ -42,6 +43,10 @@ public class KnapsackProblem {
         return solution;
     }
 
+    /**
+     *In contrary to the {@link #solveProblem()} method, the table is being printed whenever an item is picked
+     * @return returns the item that should be put into the knapsack (=returns the same as {@link #solveProblem()})
+     */
     public LinkedList<KnapsackItem> visualizeSolution(){
         int i = itemList.length;
         int j = capacity;
@@ -95,7 +100,7 @@ public class KnapsackProblem {
             if(i>=1){
                 itemNames.add(itemList[i-1].getName());
             }
-            String row = "{"+itemNames.toString()+"} " + Arrays.toString(table[i]) ;
+            String row = "{"+ itemNames +"} " + Arrays.toString(table[i]) ;
             System.out.println(row);
         }
     }
