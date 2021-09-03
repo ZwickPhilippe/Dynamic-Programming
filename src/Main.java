@@ -23,8 +23,8 @@ public class Main {
         System.out.println("Longest Common Subsequence is:");
         System.out.println(problemSolver.solveLCS());
 
-        System.out.println(Fibonacci.solveIterative(92));
-        System.out.println(Fibonacci.solveRecursive(92));
-
+        System.out.println(Fibonacci.solveIterative(42));
+        System.out.println(Fibonacci.solveRecursive(64));
+        Fibonacci.stopTime(92);
     }
 }
